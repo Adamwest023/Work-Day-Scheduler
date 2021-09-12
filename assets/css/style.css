@@ -6,11 +6,12 @@ body {
 
 textarea{
   background: transparent;
-  border: none;
   resize: none;
-  color: #000000;
-  border-left: 1px solid black;
+  /* color: #000000; */
+  /* border: 3px solid black; */
   padding: 10px;
+  
+  
 }
 
 .jumbotron {
@@ -32,14 +33,20 @@ textarea{
 
 .row {
   white-space: pre-wrap;
-  height: 80px;
-  border-top: 1px solid white;;
+  height: 100px;
+  border-top: 1px solid white;
+  flex-wrap: nowrap;
 }
 
 .hour {
   background-color: #ffffff;
   color: #000000;
   border-top: 1px dashed #000000;
+}
+.hour h2 {
+  font-size: 18px;
+  text-align: end;
+  font-weight: bold;
 }
 
 .past {
@@ -48,7 +55,7 @@ textarea{
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #244ed8dc;
   color: white;
 }
 
@@ -68,4 +75,49 @@ textarea{
 .saveBtn i:hover {
   font-size: 20px;
   transition: all .3s ease-in-out;
+}
+
+
+.fa-btn {
+  height: 60px;
+  width: 70px;
+  background-color: #06AED5;
+  color: white;
+  border: 0px;
+  /* padding-bottom: 20px; */
+  padding-left: 11px;
+}
+/* #time-block {
+  display: none;
+} */
+
+/* Media Queries*/
+@media only screen and (max-width: 768px) {
+
+
+  .fa-3x {
+   font-size: 2em;
+  }
+
+  .fa-btn {
+    height: 40px;
+    width: 40px;
+
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container {
+    width: 110%;
+  }
+  .fa-btn{
+    height: 20px;
+    width: 20px;
+    padding-left: 0px;
+  }
+
+  .hour {
+    padding-left: 0px;
+  }
+
 }
